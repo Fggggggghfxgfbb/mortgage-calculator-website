@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+</head>
+<style>
+
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #0c0012;
+    }
+    
+    nav{
+        background-color: gray;
+        overflow:hidden;
+        padding: 0.4em;
+        border-radius: 40px;
+
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+        <!--width: 50%;
+        margin: auto;-->
+
+    }
+    .bruh{
+        width: 40vw;
+        padding: 10px 50vw;
+        
+
+    }
+    nav a{
+        float: right;
+        background-color: darkgrey;
+        text-decoration:none;
+        padding: 5px;
+        color: white;
+
+    }
+
+    nav a:hover{
+        background-color: white;
+        color: black
+
+    }
+
+    h1{
+
+        color: gray;
+    }
+    h5{
+
+        color: gray;
+        
+    }
+
+</style>
+<body>
+    <nav>
+        <a href="faq.html">FAQ</a>
+        <a href="services.html">Services</a>
+        <a href="contact_us.html">Contact us</a>
+        <a href="about_us.html">About us</a>
+        <a href="actual_calculator.html">Our Calculator</a>
+        <a href="homepage.html">Home</a>
+    </nav>
+
+    <div class="center">
+        <h1>Banking Website</h1>
+    </div>
+    
+    <div class="center">
+        <form method="POST" action="" enctype="multipart/form-data">
+            <label for="files">What you wanna post?</label><br><br>
+            <input type="file" name="file" id="files"><br><br>
+            <textarea name="caption" rows="4" cols="25" placeholder="write a caption"></textarea><br><br>
+            <input type="submit">
+        </form>
+    </div>
+
+</body>
+</html>

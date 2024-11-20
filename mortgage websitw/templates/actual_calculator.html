@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+</head>
+
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+<script>
+    var fahr = 0
+    var cent = 0
+
+    function temperature(){
+        if (document.getElementById("fahr").value.trim() == ""){
+            if(document.getElementById("cent").value.trim() == ""){
+                alert("you need a a value")
+
+        
+        
+            }else{
+                fahr = String((Number(document.getElementById("cent").value - 32)/9*5))
+            
+                document.getElementById(fahr).value = fahr
+            }
+
+        }
+        
+        else{
+            if(document.getElementById("cent").value.trim() != ""){
+                
+                alert("you cant have both value in")
+        
+        
+            }else{
+                cent = String((Number(document.getElementById("fahr").value *9/5)+32))
+                document.getElementById(fahr).value = cent
+            }
+
+        }
+        
+
+
+    }
+
+    document.write(cent)
+    document.write(fahr)
+
+
+
+
+</script>
+
+<style>
+
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .topnav{
+        background-color: gray;
+        overflow:hidden;
+
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+        <!--width: 50%;
+        margin: auto;-->
+
+    }
+    .bruh{
+        width: 40vw;
+        padding: 10px 50vw;
+
+
+    }
+    .topnav a{
+        float: right;
+        background-color: darkgrey;
+        text-decoration:none;
+        padding: 5px;
+        color: white;
+
+    }
+
+    .topnav a:hover{
+        background-color: white;
+        color: black
+
+    }
+
+    h1{
+
+        color: gray;
+        
+    h5{
+
+        color: gray;
+        
+    }
+
+</style>
+<body>
+    <div class= "topnav">
+        <a href="faq.html">FAQ</a>
+        <a href="services.html">Services</a>
+        <a href="contact_us.html">Contact us</a>
+        <a href="about_us.html">About us</a>
+        <a href="actual_calculator.html">Our Calculator</a>
+        <a href="homepage.html">Home</a>
+    </div>
+
+    <div class="center"><h1>Banking Website</h1></div>
+    <div class="center">
+        <form method="POST" action="" enctype="multipart/form-data">
+            <input type="text" name="text" id="cent" value="">
+            <br><br>
+            <input type="text" name="text" id="fahr" value="" ><br><br>
+            <input type="submit" onclick="temperature()">
+        </form>
+    </div> 
+
+</body>
+</html>

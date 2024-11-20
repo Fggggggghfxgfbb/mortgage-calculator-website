@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<script>
+    var fahr = 0
+    var cent = 0
+
+    function temperature(){
+        if (document.getElementById("fahr").value.trim() == ""){
+            if(document.getElementById("cent").value.trim() == ""){
+                alert("you need a a value")
+
+        
+        
+            }else{
+                fahr = String((Number(document.getElementById("cent").value - 32)/9*5))
+            
+                document.getElementById(fahr).value = fahr
+            }
+
+        }
+        
+        else{
+            if(document.getElementById("cent").value.trim() != ""){
+                
+                alert("you cant have both value in")
+        
+        
+            }else{
+                cent = String((Number(document.getElementById("fahr").value *9/5)+32))
+                document.getElementById(fahr).value = cent
+            }
+
+        }
+        
+
+
+    }
+
+    
+
+
+
+</script>
+
+<style>
+
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #ffffff;
+    }
+    
+    .topnav{
+        background-color: #283747 ;
+        overflow:hidden;
+
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+        <!--width: 50%;
+        margin: auto;-->
+
+    }
+    .bruh{
+        width: 40vw;
+        padding: 10px 50vw;
+
+
+    }
+    .topnav a{
+        float: right;
+        background-color:  #283747 ;
+        text-decoration:none;
+        padding: 0.4em;
+        border-radius: 10px;
+        color: white;
+
+    }
+
+    .topnav a:hover{
+        background-color: white;
+        color: black
+
+    }
+
+    h1{
+
+        color: #283747;
+    }
+    h5{
+
+        color: gray;
+        
+    }
+
+</style>
+<body>
+    <div class= "topnav">
+        <div class="logo">
+            <a href="homepage.html"><img src="static/—Pngtree—mv vm letter vector logo_5249394.png" width="40px" height="40px"></a>
+
+
+        </div>
+        <a href="faq.html">FAQ</a>
+        <a href="services.html">Services</a>
+        <a href="contact_us.html">Contact us</a>
+        <a href="about_us.html">About us</a>
+        <a href="actual_calculator.html">Our Calculator</a>
+        <a href="homepage.html">Home</a>
+    </div>
+
+    <div class="center"><h1>Monopoly Management</h1></div>
+    
+
+</body>
+</html>
+
